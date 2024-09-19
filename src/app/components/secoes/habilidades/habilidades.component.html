@@ -1,27 +1,27 @@
-<section class="app-background-escuro d-flex justify-content-center align-items-center" id="habilidades">
-    <div class="container">
+<section
+  class="app-background-escuro d-flex justify-content-center align-items-center"
+  id="habilidades"
+>
+  <div class="container">
+    <h2 class="display-5 fw-bold text-center">Minhas habilidades</h2>
 
-        <h2 class="display-5 fw-bold text-center">Minhas habilidades</h2>
-    
-        <div class="row row-cols-1 row-cols-lg-2 g-3 mt-5">
-    
-            <div *ngFor="let item of itensHabilidades" class="d-flex align-items-center gap-4">
+    <div class="row row-cols-1 row-cols-lg-2 g-3 mt-5">
+      <div
+        *ngFor="let item of itensHabilidades"
+        class="d-flex align-items-center gap-4"
+      >
+        <span>
+          <i class="bi {{ item.icone }} fs-1"></i>
+        </span>
 
-                <span>
-                    <i class="bi {{item.icone}} fs-1"></i>
-                </span>
-        
-                <div class="d-flex flex-column">
-                    <label class="fs-4 fw-semibold">{{item.titulo}}</label>
-        
-                    <small class="fs-5">
-                       {{item.descricao}}
-                    </small>
-                    
-                </div>
+        <div class="d-flex flex-column">
+          <label class="fs-4 fw-semibold">{{ item.titulo }}</label>
 
-            </div>            
+          <small class="fs-5">
+            {{ item.descricao }}
+          </small>
         </div>
-
+      </div>
     </div>
+  </div>
 </section>

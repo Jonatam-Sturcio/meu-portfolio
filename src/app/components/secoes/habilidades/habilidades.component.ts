@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { ItemHabilidades } from './models/item-habilidades';
-import { NgForOf } from '@angular/common';
+import { Component } from "@angular/core";
+import { ItemHabilidades } from "./models/item-habilidades";
+import { NgForOf } from "@angular/common";
 
 @Component({
-  selector: 'app-habilidades',
+  selector: "app-habilidades",
   standalone: true,
   imports: [NgForOf],
-  templateUrl: './habilidades.component.html',
-  styleUrl: './habilidades.component.scss'
+  templateUrl: "./habilidades.component.html",
+  styleUrl: "./habilidades.component.scss",
 })
 export class HabilidadesComponent {
   public itensHabilidades: ItemHabilidades[] = [
