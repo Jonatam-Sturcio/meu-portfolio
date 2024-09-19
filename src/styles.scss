@@ -3,8 +3,8 @@
 @import "bootstrap";
 @import "bootstrap-icons";
 
-$cor-principal: #ec6afa;
-$cor-secundaria: #6d2bc2;
+$cor-principal: #177d20;
+$cor-secundaria: #0b5714;
 
 $cor-background-1: #312d35;
 $cor-background-2: #242527;
@@ -12,6 +12,12 @@ $cor-background-2: #242527;
 .app-text-principal
 {
     color: $cor-principal;
+}
+.app-background-principal
+{
+    background-color: $cor-principal;
+
+   
 }
 
 .app-background-secundario
@@ -27,4 +33,17 @@ $cor-background-2: #242527;
 .app-background-escuro-2
 {
     background-color: $cor-background-2;
+}
+
+.app-background-hover{
+    &:hover {
+        background-color: $cor-secundaria;
+    }
+}
+section 
+{
+    min-height: 100vh; // vh - view-height
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
