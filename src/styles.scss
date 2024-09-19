@@ -1,3 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import "bootstrap";
-@import "Bootstrap-icons"
+@import "bootstrap-icons";
+
+$cor-principal: #ec6afa;
+$cor-secundaria: #6d2bc2;
+
+$cor-background-1: #312d35;
+$cor-background-2: #242527;
+
+.app-text-principal
+{
+    color: $cor-principal;
+}
+
+.app-background-secundario
+{
+    background-color: $cor-secundaria;
+}
+
+.app-background-escuro 
+{
+    background-color: $cor-background-1;
+}
+
+.app-background-escuro-2
+{
+    background-color: $cor-background-2;
+}
