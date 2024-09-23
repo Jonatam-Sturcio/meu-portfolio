@@ -98,7 +98,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "",
+            "baseHref": "https://Jonatam-sturcio.github.io/meu-portfolio/",
             "repo": "https://github.com/Jonatam-Sturcio/meu-portfolio.git"
           }
         }
