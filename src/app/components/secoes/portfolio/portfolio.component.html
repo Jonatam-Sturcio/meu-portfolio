@@ -1,20 +1,42 @@
-<section class="app-background-escuro d-flex justify-content-center align-items-center" id="portfolio">
-    <div class="container">
-      <h2 class="display-5 fw-bold text-center">Portfólio</h2>
-  
-      <!--
-        <div class="row flex-wrap justify-content-center g-3 mt-5">
-            <div class="col-lg-4">
-                <a target="_blank" href="https://www.academiadoprogramador.net">
-                    <img clas="img-fluid rounded-4" src="/img-academia-sm.png" alt="Website da Academia do Programador versão mobile"/>
-                </a>
-            </div>
-  
-            <div class="col">
-                <img class="img-fluid rounded-4" src="/img-gerenciador-cinema.png" alt="Aplicação Gerador de Cinema"/>
-            </div>
-        </div>
-        -->
+<section
+  class="app-background-escuro d-flex justify-content-center align-items-center"
+  id="portfolio"
+>
+  <div class="container">
+    <h2 class="display-5 fw-bold text-center">Portfólio</h2>
 
+    <div class="row flex-wrap justify-content-center g-3 mt-5">
+      <div id="carrossel" class="carousel slide">
+        <div class="carousel-inner">
+          <div *ngFor="let item of carrossel" class="carousel-item active">
+            <a href="{{ item.link }}" target="_blank">
+              <img
+                src="{{ item.img }}"
+                class="d-block w-100"
+                alt="Imagem {{ item.nome }}"
+              />
+            </a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carrossel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carrossel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
     </div>
+  </div>
 </section>
