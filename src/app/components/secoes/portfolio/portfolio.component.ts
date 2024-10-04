@@ -20,6 +20,11 @@ export class PortfolioComponent {
       img: "pokedex.png",
       link: "https://jonatam-sturcio.github.io/pokedex/",
     },
+    {
+      nome: "Geranciador de Filmes",
+      img: "filmes.png",
+      link: "https://jonatam-sturcio.github.io/GerenciadorFilmes/filmes",
+    },
   ];
 }
 
