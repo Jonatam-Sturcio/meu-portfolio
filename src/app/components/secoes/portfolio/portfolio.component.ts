@@ -21,9 +21,14 @@ export class PortfolioComponent {
       link: "https://jonatam-sturcio.github.io/pokedex/",
     },
     {
-      nome: "Geranciador de Filmes",
+      nome: "Gerenciador de Filmes",
       img: "filmes.png",
       link: "https://jonatam-sturcio.github.io/GerenciadorFilmes/filmes",
+    },
+    {
+      nome: "Note Keeper",
+      img: "notekeeper.png",
+      link: "https://jonatam-sturcio.github.io/note-keeper-2024/dashboard",
     },
   ];
 }
